@@ -13,9 +13,10 @@
 		83F22D2D2B43ABF50012F251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F22D2B2B43ABF50012F251 /* Main.storyboard */; };
 		83F22D2F2B43ABF60012F251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F22D2E2B43ABF60012F251 /* Assets.xcassets */; };
 		83F22D322B43ABF60012F251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F22D302B43ABF60012F251 /* LaunchScreen.storyboard */; };
-		83F22D3D2B43ABF60012F251 /* CodeCoverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F22D3C2B43ABF60012F251 /* CodeCoverageTests.swift */; };
 		83F22D472B43ABF60012F251 /* CodeCoverageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F22D462B43ABF60012F251 /* CodeCoverageUITests.swift */; };
 		83F22D492B43ABF60012F251 /* CodeCoverageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F22D482B43ABF60012F251 /* CodeCoverageUITestsLaunchTests.swift */; };
+		83F22D562B43AC120012F251 /* CoveredFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F22D552B43AC120012F251 /* CoveredFile.swift */; };
+		83F22D582B43AC710012F251 /* CoveredClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F22D572B43AC710012F251 /* CoveredClassTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +46,11 @@
 		83F22D312B43ABF60012F251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83F22D332B43ABF60012F251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83F22D382B43ABF60012F251 /* CodeCoverageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeCoverageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83F22D3C2B43ABF60012F251 /* CodeCoverageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCoverageTests.swift; sourceTree = "<group>"; };
 		83F22D422B43ABF60012F251 /* CodeCoverageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeCoverageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F22D462B43ABF60012F251 /* CodeCoverageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCoverageUITests.swift; sourceTree = "<group>"; };
 		83F22D482B43ABF60012F251 /* CodeCoverageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCoverageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83F22D552B43AC120012F251 /* CoveredFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredFile.swift; sourceTree = "<group>"; };
+		83F22D572B43AC710012F251 /* CoveredClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredClassTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				83F22D2E2B43ABF60012F251 /* Assets.xcassets */,
 				83F22D302B43ABF60012F251 /* LaunchScreen.storyboard */,
 				83F22D332B43ABF60012F251 /* Info.plist */,
+				83F22D552B43AC120012F251 /* CoveredFile.swift */,
 			);
 			path = CodeCoverage;
 			sourceTree = "<group>";
@@ -113,7 +116,7 @@
 		83F22D3B2B43ABF60012F251 /* CodeCoverageTests */ = {
 			isa = PBXGroup;
 			children = (
-				83F22D3C2B43ABF60012F251 /* CodeCoverageTests.swift */,
+				83F22D572B43AC710012F251 /* CoveredClassTests.swift */,
 			);
 			path = CodeCoverageTests;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 					};
 					83F22D372B43ABF60012F251 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = 83F22D212B43ABF50012F251;
 					};
 					83F22D412B43ABF60012F251 = {
@@ -258,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F22D562B43AC120012F251 /* CoveredFile.swift in Sources */,
 				83F22D2A2B43ABF50012F251 /* ViewController.swift in Sources */,
 				83F22D262B43ABF50012F251 /* AppDelegate.swift in Sources */,
 				83F22D282B43ABF50012F251 /* SceneDelegate.swift in Sources */,
@@ -268,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83F22D3D2B43ABF60012F251 /* CodeCoverageTests.swift in Sources */,
+				83F22D582B43AC710012F251 /* CoveredClassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +499,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -502,6 +508,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hh.CodeCoverageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeCoverage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodeCoverage";
@@ -513,6 +520,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
