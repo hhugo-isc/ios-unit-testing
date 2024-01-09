@@ -15,7 +15,7 @@
 		83F22D322B43ABF60012F251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F22D302B43ABF60012F251 /* LaunchScreen.storyboard */; };
 		83F22D472B43ABF60012F251 /* CodeCoverageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F22D462B43ABF60012F251 /* CodeCoverageUITests.swift */; };
 		83F22D492B43ABF60012F251 /* CodeCoverageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F22D482B43ABF60012F251 /* CodeCoverageUITestsLaunchTests.swift */; };
-		83F22D562B43AC120012F251 /* CoveredFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F22D552B43AC120012F251 /* CoveredFile.swift */; };
+		83F22D562B43AC120012F251 /* CoveredClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F22D552B43AC120012F251 /* CoveredClass.swift */; };
 		83F22D582B43AC710012F251 /* CoveredClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F22D572B43AC710012F251 /* CoveredClassTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,7 @@
 		83F22D422B43ABF60012F251 /* CodeCoverageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeCoverageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F22D462B43ABF60012F251 /* CodeCoverageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCoverageUITests.swift; sourceTree = "<group>"; };
 		83F22D482B43ABF60012F251 /* CodeCoverageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCoverageUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		83F22D552B43AC120012F251 /* CoveredFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredFile.swift; sourceTree = "<group>"; };
+		83F22D552B43AC120012F251 /* CoveredClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredClass.swift; sourceTree = "<group>"; };
 		83F22D572B43AC710012F251 /* CoveredClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredClassTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +108,7 @@
 				83F22D2E2B43ABF60012F251 /* Assets.xcassets */,
 				83F22D302B43ABF60012F251 /* LaunchScreen.storyboard */,
 				83F22D332B43ABF60012F251 /* Info.plist */,
-				83F22D552B43AC120012F251 /* CoveredFile.swift */,
+				83F22D552B43AC120012F251 /* CoveredClass.swift */,
 			);
 			path = CodeCoverage;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83F22D562B43AC120012F251 /* CoveredFile.swift in Sources */,
+				83F22D562B43AC120012F251 /* CoveredClass.swift in Sources */,
 				83F22D2A2B43ABF50012F251 /* ViewController.swift in Sources */,
 				83F22D262B43ABF50012F251 /* AppDelegate.swift in Sources */,
 				83F22D282B43ABF50012F251 /* SceneDelegate.swift in Sources */,
