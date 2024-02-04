@@ -13,9 +13,9 @@
 		83C1173A2B7035880064CAC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C117382B7035880064CAC0 /* Main.storyboard */; };
 		83C1173C2B7035890064CAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C1173B2B7035890064CAC0 /* Assets.xcassets */; };
 		83C1173F2B7035890064CAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C1173D2B7035890064CAC0 /* LaunchScreen.storyboard */; };
-		83C1174A2B7035890064CAC0 /* LoadViewControllersTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C117492B7035890064CAC0 /* LoadViewControllersTestsTests.swift */; };
-		83C117542B7035890064CAC0 /* LoadViewControllersTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C117532B7035890064CAC0 /* LoadViewControllersTestsUITests.swift */; };
-		83C117562B7035890064CAC0 /* LoadViewControllersTestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C117552B7035890064CAC0 /* LoadViewControllersTestsUITestsLaunchTests.swift */; };
+		83C117632B7036950064CAC0 /* StoryboardBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C117622B7036950064CAC0 /* StoryboardBasedViewController.swift */; };
+		83C117652B7037790064CAC0 /* StoryboardBasedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C117642B7037790064CAC0 /* StoryboardBasedViewControllerTests.swift */; };
+		83C117672B7037FB0064CAC0 /* LoadViewControllersTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C117662B7037FB0064CAC0 /* LoadViewControllersTestsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +45,10 @@
 		83C1173E2B7035890064CAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83C117402B7035890064CAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83C117452B7035890064CAC0 /* LoadViewControllersTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadViewControllersTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83C117492B7035890064CAC0 /* LoadViewControllersTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewControllersTestsTests.swift; sourceTree = "<group>"; };
 		83C1174F2B7035890064CAC0 /* LoadViewControllersTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadViewControllersTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83C117532B7035890064CAC0 /* LoadViewControllersTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewControllersTestsUITests.swift; sourceTree = "<group>"; };
-		83C117552B7035890064CAC0 /* LoadViewControllersTestsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewControllersTestsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83C117622B7036950064CAC0 /* StoryboardBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedViewController.swift; sourceTree = "<group>"; };
+		83C117642B7037790064CAC0 /* StoryboardBasedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedViewControllerTests.swift; sourceTree = "<group>"; };
+		83C117662B7037FB0064CAC0 /* LoadViewControllersTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewControllersTestsUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +102,7 @@
 				83C117322B7035880064CAC0 /* AppDelegate.swift */,
 				83C117342B7035880064CAC0 /* SceneDelegate.swift */,
 				83C117362B7035880064CAC0 /* ViewController.swift */,
+				83C117622B7036950064CAC0 /* StoryboardBasedViewController.swift */,
 				83C117382B7035880064CAC0 /* Main.storyboard */,
 				83C1173B2B7035890064CAC0 /* Assets.xcassets */,
 				83C1173D2B7035890064CAC0 /* LaunchScreen.storyboard */,
@@ -113,7 +114,7 @@
 		83C117482B7035890064CAC0 /* LoadViewControllersTestsTests */ = {
 			isa = PBXGroup;
 			children = (
-				83C117492B7035890064CAC0 /* LoadViewControllersTestsTests.swift */,
+				83C117642B7037790064CAC0 /* StoryboardBasedViewControllerTests.swift */,
 			);
 			path = LoadViewControllersTestsTests;
 			sourceTree = "<group>";
@@ -121,8 +122,7 @@
 		83C117522B7035890064CAC0 /* LoadViewControllersTestsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				83C117532B7035890064CAC0 /* LoadViewControllersTestsUITests.swift */,
-				83C117552B7035890064CAC0 /* LoadViewControllersTestsUITestsLaunchTests.swift */,
+				83C117662B7037FB0064CAC0 /* LoadViewControllersTestsUITests.swift */,
 			);
 			path = LoadViewControllersTestsUITests;
 			sourceTree = "<group>";
@@ -198,10 +198,12 @@
 					};
 					83C117442B7035890064CAC0 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = 83C1172E2B7035880064CAC0;
 					};
 					83C1174E2B7035890064CAC0 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = 83C1172E2B7035880064CAC0;
 					};
 				};
@@ -259,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83C117372B7035880064CAC0 /* ViewController.swift in Sources */,
+				83C117632B7036950064CAC0 /* StoryboardBasedViewController.swift in Sources */,
 				83C117332B7035880064CAC0 /* AppDelegate.swift in Sources */,
 				83C117352B7035880064CAC0 /* SceneDelegate.swift in Sources */,
 			);
@@ -268,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83C1174A2B7035890064CAC0 /* LoadViewControllersTestsTests.swift in Sources */,
+				83C117652B7037790064CAC0 /* StoryboardBasedViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83C117542B7035890064CAC0 /* LoadViewControllersTestsUITests.swift in Sources */,
-				83C117562B7035890064CAC0 /* LoadViewControllersTestsUITestsLaunchTests.swift in Sources */,
+				83C117672B7037FB0064CAC0 /* LoadViewControllersTestsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +496,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -502,6 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hh.LoadViewControllersTestsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoadViewControllersTests.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoadViewControllersTests";
@@ -513,6 +517,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -531,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -538,6 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hh.LoadViewControllersTestsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = LoadViewControllersTests;
@@ -548,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
