@@ -16,6 +16,9 @@
 		83C117632B7036950064CAC0 /* StoryboardBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C117622B7036950064CAC0 /* StoryboardBasedViewController.swift */; };
 		83C117652B7037790064CAC0 /* StoryboardBasedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C117642B7037790064CAC0 /* StoryboardBasedViewControllerTests.swift */; };
 		83C117672B7037FB0064CAC0 /* LoadViewControllersTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C117662B7037FB0064CAC0 /* LoadViewControllersTestsUITests.swift */; };
+		83C1176A2B703AA20064CAC0 /* XIBBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C117682B703AA20064CAC0 /* XIBBasedViewController.swift */; };
+		83C1176B2B703AA20064CAC0 /* XIBBasedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C117692B703AA20064CAC0 /* XIBBasedViewController.xib */; };
+		83C1176D2B703B7E0064CAC0 /* XIBBasedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1176C2B703B7E0064CAC0 /* XIBBasedViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		83C117622B7036950064CAC0 /* StoryboardBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedViewController.swift; sourceTree = "<group>"; };
 		83C117642B7037790064CAC0 /* StoryboardBasedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedViewControllerTests.swift; sourceTree = "<group>"; };
 		83C117662B7037FB0064CAC0 /* LoadViewControllersTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewControllersTestsUITests.swift; sourceTree = "<group>"; };
+		83C117682B703AA20064CAC0 /* XIBBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBasedViewController.swift; sourceTree = "<group>"; };
+		83C117692B703AA20064CAC0 /* XIBBasedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBBasedViewController.xib; sourceTree = "<group>"; };
+		83C1176C2B703B7E0064CAC0 /* XIBBasedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBasedViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,8 @@
 				83C1173B2B7035890064CAC0 /* Assets.xcassets */,
 				83C1173D2B7035890064CAC0 /* LaunchScreen.storyboard */,
 				83C117402B7035890064CAC0 /* Info.plist */,
+				83C117682B703AA20064CAC0 /* XIBBasedViewController.swift */,
+				83C117692B703AA20064CAC0 /* XIBBasedViewController.xib */,
 			);
 			path = LoadViewControllersTests;
 			sourceTree = "<group>";
@@ -115,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				83C117642B7037790064CAC0 /* StoryboardBasedViewControllerTests.swift */,
+				83C1176C2B703B7E0064CAC0 /* XIBBasedViewControllerTests.swift */,
 			);
 			path = LoadViewControllersTestsTests;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C1176B2B703AA20064CAC0 /* XIBBasedViewController.xib in Resources */,
 				83C1173F2B7035890064CAC0 /* LaunchScreen.storyboard in Resources */,
 				83C1173C2B7035890064CAC0 /* Assets.xcassets in Resources */,
 				83C1173A2B7035880064CAC0 /* Main.storyboard in Resources */,
@@ -261,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83C117372B7035880064CAC0 /* ViewController.swift in Sources */,
+				83C1176A2B703AA20064CAC0 /* XIBBasedViewController.swift in Sources */,
 				83C117632B7036950064CAC0 /* StoryboardBasedViewController.swift in Sources */,
 				83C117332B7035880064CAC0 /* AppDelegate.swift in Sources */,
 				83C117352B7035880064CAC0 /* SceneDelegate.swift in Sources */,
@@ -271,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C1176D2B703B7E0064CAC0 /* XIBBasedViewControllerTests.swift in Sources */,
 				83C117652B7037790064CAC0 /* StoryboardBasedViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
